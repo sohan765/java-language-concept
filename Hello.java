@@ -1,30 +1,16 @@
-import java.util.Scanner;
+import java.util.*;
+/* 
+java does not allow global variable.
+every var is declare inside the  class. 
+ststic keyword is used to make a var just like a global.
+ */
 public class Hello{
-    public static void main(String[] args)
-    {
-    //    Scanner sc = new Scanner(System.in);
-    //    System.out.println("enter marks for physics ");
-    //    float phy = sc.nextFloat();
-    //    System.out.println("enter marks for chemsitry ");
-    //    float chem = sc.nextFloat();
-    //    System.out.println("enter marks for mathematics ");
-    //    float maths = sc.nextFloat();
-    //    System.out.println("enter marks for english ");
-    //    float english = sc.nextFloat();
-    //    System.out.println("enter marks for hindi ");
-    //    float hindi = sc.nextFloat();
-    //    float sum = (phy + chem+maths+english+hindi)*100;
-    //    float result = sum/500;
-    //    System.out.println("the marks in percentages is :");
-    //    System.out.println(result);
-    //    String s = sc.next();
-    //    System.out.println("hello"+s+" have a nice day");
-
-    // int i=8;
-    // int b = ++i;
-    // System.out.println(b);
-    int a = 10;
-    System.out.println(+a);
-    System.out.println(-a);
+    public static void main(String[] args) {
+        int x =10;
+        if(x==10){
+            int y = 20;
+            System.out.println("te sum is : "+ (x+y));
+        }
+        //System.out.println("y is not declare as local it gives an error" + y); // error
     }
 }
